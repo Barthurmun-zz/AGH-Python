@@ -37,6 +37,12 @@ class LiczbyZespolone(object):
             c.im = b.re*a.im
         return c
 
+    def __repr__(self):
+        if (self.im > 0):
+            return "{}+{}i".format(self.re,self.im)
+        if (self.im < 0):
+            return "{}{}i".format(self.re,self.im)
+    
     def prtComplex(self,c=None):
         '''Wypisywanie stworzonej liczby zespolonej'''
         if c == None:
@@ -49,6 +55,7 @@ class LiczbyZespolone(object):
                 print("{}+{}i".format(c.re,c.im))
             if (c.im < 0):
                 print("{}{}i".format(c.re,c.im))
+
 
 def main():
     f_complex_re = input("Podaj realis pierwszej liczby:")
@@ -63,7 +70,6 @@ def main():
     add_comples = f_complex.add(s_complex)
     sub_comples = f_complex.sub(s_complex)
     mlt_comples = f_complex.mlt(s_complex)
-
     
     f_complex.prtComplex()
     s_complex.prtComplex()
