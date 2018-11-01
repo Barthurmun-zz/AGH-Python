@@ -1,0 +1,20 @@
+<letter>
+
+
+  <title maxlength="10"> Quote Letter </title>
+
+
+  <salutation limit="40">Dear Daniel,</salutation>
+
+  <signature updated="yes">Jakub King</signature>
+
+  <address type="postal">Poczta Polska Basen, Skawina, 32-050</address>
+	
+  <address type="street">Ogrody 38a, Skawina, 32-050</address>
+
+  <weblink>http://www.smith-company-ltd.com</weblink>
+
+  <logo address="http://www.smith-company-ltd.com/logo.jpg" alt="Logo of Smith and Company Ltd." />
+
+
+</letter>
