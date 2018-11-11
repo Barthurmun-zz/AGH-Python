@@ -3,9 +3,9 @@ from multiprocessing import Pool
 import numpy as np
 import time
 
-x = np.random.randint(0, 10, 1000000000)#Losujemy 100mln liczb z zakresu 0-10
+x = np.random.randint(0, 10, 100000000)#Losujemy 100mln liczb z zakresu 0-10
 
-no_cores = 2
+no_cores = 3
 
 def split(data, parts):
     data = data.tolist() #Robimy liste z tych wylosowanych liczb
